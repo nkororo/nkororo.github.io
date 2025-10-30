@@ -15,7 +15,7 @@ header, section {
 }
 
 header {
-    background-color: #b1c2c4;
+    background-color: #372f61;
     color: white;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
@@ -71,7 +71,7 @@ li a:hover {
 }
 
 .project-card h3 {
-    color: #1e444a;
+    color: #372f61;
     margin-top: 0;
 }
 
