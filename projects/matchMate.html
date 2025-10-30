@@ -12,12 +12,26 @@
     </header>
 
     <section class="project-card">
-        <p><strong>Type:</strong> Cloud Web App</p>
-        <p><strong>Technologies:</strong> Node.js, JavaScript, Docker, Azure, REST API, SQL</p>
-        <p>Aplicație bazată pe microservicii pentru potrivirea utilizatorilor în funcție de preferințele de gaming. Include servicii independente pentru utilizatori, matchmaking și chat, containerizate și deploy-ate în Azure.</p>
-        <p><a href="https://drive.google.com/file/d/1paA5UbmhD5yNbLDHVljPDgMNWdVDRS-y/view?usp=sharing" target="_blank">Vezi demo</a></p>
+        <p><strong>Tip:</strong> Cloud Web App</p>
+        <p><strong>Tehnologii:</strong> Node.js, JavaScript, Docker, Azure Container Apps, REST API, Azure SQL, MSSQL</p>
+        
+        <p><strong>Descriere:</strong> O aplicație web bazată pe o arhitectură cu microservicii, concepută pentru a potrivi utilizatorii în funcție de preferințele lor de jocuri. Sistemul include trei servicii independente:</p>
+
+        <ul>
+            <li><strong>user-service</strong> – pentru înregistrare și autentificare;</li>
+            <li><strong>matchmaking-service</strong> – pentru calcularea compatibilității dintre utilizatori și gestionarea cererilor de prietenie;</li>
+            <li><strong>chat-service</strong> – pentru mesagerie și feedback.</li>
+        </ul>
+
+        <p>Fiecare serviciu este containerizat folosind Docker și este implementat în Microsoft Azure prin intermediul Azure Container Apps. Comunicarea între servicii se realizează prin API-uri RESTful.</p>
+
+        <p>Scorurile de compatibilitate sunt calculate pe baza intereselor comune, stilului de joc, disponibilității și ratingurilor utilizatorilor. Feedback-ul și istoricul conversațiilor sunt stocate și analizate pentru a îmbunătăți experiența utilizatorilor și moderarea.</p>
+
+        <p>Arhitectura promovează modularitatea, scalabilitatea și ușurința în mentenanță.</p>
+
+        <p><a href="https://drive.google.com/file/d/1paA5UbmhD5yNbLDHVljPDgMNWdVDRS-y/view?usp=sharing" target="_blank">📎 Vezi demonstrația aplicației</a></p>
     </section>
 
-    <p><a href="../index.html">Înapoi la portofoliu</a></p>
+    <p><a href="../index.html">⬅ Înapoi la portofoliu</a></p>
 </body>
 </html>
