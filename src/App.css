@@ -1,0 +1,230 @@
+/* src/App.css */
+
+/* --- Setări Generale --- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: #f8fafc; 
+  color: #1e293b; 
+  line-height: 1.6;
+  width: 100%;
+}
+#root {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+/* --- Layout Principal --- */
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 1.5rem;
+  width: 100%;
+  flex: 1; /* Împinge footer-ul jos */
+}
+
+/* --- Header --- */
+.main-header {
+  background-color: #ffffff;
+  border-bottom: 1px solid #e2e8f0;
+  padding: 5rem 1.5rem;
+  text-align: center;
+}
+
+.header-content h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #0f172a;
+  margin-bottom: 1rem;
+  letter-spacing: -0.025em;
+}
+
+.header-content p {
+  font-size: 1.25rem;
+  color: #475569;
+}
+
+.header-content span {
+  color: #5C3478; 
+  font-weight: 700;
+}
+
+
+.filters-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 4rem;
+}
+
+.filter-btn {
+  padding: 0.5rem 1.5rem;
+  border-radius: 9999px; 
+  font-size: 0.875rem;
+  font-weight: 600;
+  cursor: pointer;
+  border: 1px solid #e2e8f0;
+  background-color: white;
+  color: #475569;
+  transition: all 0.2s ease;
+}
+
+.filter-btn:hover {
+  background-color: #f1f5f9;
+}
+
+.filter-btn.active {
+  background-color: #2563eb;
+  color: white;
+  border-color: #2563eb;
+  box-shadow: 0 4px 6px -1px rgba(37, 99, 235, 0.2);
+}
+
+/* --- Grid Proiecte --- */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* Responsive automat */
+  gap: 2.5rem;
+}
+
+/* --- Card Proiect --- */
+.project-card {
+  background-color: white;
+  border-radius: 1rem;
+  border: 1px solid #f1f5f9;
+  border-top: 4px solid #2563eb; /* Linia albastră sus */
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+  padding: 2rem; /* Acel padding mare pe care îl doreai */
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* --- Elemente Interne Card --- */
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.icon-box {
+  background-color: #eff6ff;
+  color: #2563eb;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.category-label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #94a3b8;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.card-description {
+  color: #475569;
+  margin-bottom: 2rem;
+  flex: 1; /* Împinge elementele de jos */
+}
+
+.divider {
+  height: 1px;
+  background-color: #f1f5f9;
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+/* --- Tag-uri --- */
+.tags-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.tag {
+  background-color: #f8fafc;
+  border: 1px solid #e2e8f0;
+  color: #475569;
+  font-size: 0.75rem;
+  font-weight: 500;
+  padding: 0.25rem 0.75rem;
+  border-radius: 0.375rem;
+}
+
+/* --- Buton Card --- */
+.card-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background-color: #0f172a;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  transition: background-color 0.2s;
+  margin-top: auto; 
+}
+
+.card-btn:hover {
+  background-color: #1e293b;
+}
+
+
+.main-footer {
+  background-color: white;
+  border-top: 1px solid #e2e8f0;
+  padding: 3rem 1.5rem;
+  text-align: center;
+  color: #94a3b8;
+  margin-top: auto;
+}
+
+
+@media (max-width: 640px) {
+  .header-content h1 {
+    font-size: 2.25rem;
+  }
+  
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}
