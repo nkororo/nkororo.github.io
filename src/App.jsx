@@ -20,9 +20,8 @@ function App() {
         <div className="header-content">
           <h1>Domșa Daiana</h1>
           <h3> Proiecte dezvoltate cu pasiune</h3>
-          <p>Junior Software Developer în formare, cu un interes pentru backend și baze de date. Am cunoștințe teoretice și practice în Java, Python și JS, aplicate în proiecte. Sunt în căutarea primului rol profesional unde să pot pune în practică bazele acumulate și să evoluez alături de o echipă experimentată.
-          <\p>
-        </div>
+          <p>Junior Software Developer în formare, cu un interes pentru backend și baze de date. Am cunoștințe teoretice și practice în Java, Python și JS, aplicate în proiecte. Sunt în căutarea primului rol profesional unde să pot pune în practică bazele acumulate și să evoluez alături de o echipă experimentată.</p>p>
+          </div>
       </header>
 
       {/* Zona Principală */}
