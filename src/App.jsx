@@ -21,9 +21,9 @@ function App() {
           <h1>Domșa Daiana - Portofoliu</h1>
           <p>
             Proiecte dezvoltate cu pasiune.
-          </p>
-          <p>
-            Junior Software Developer în formare, cu un interes deosebit pentru backend și baze de date. Dețin cunoștințe teoretice și practice în Java, Python și JS, aplicate în proiecte de tip personal/cursuri. Sunt în căutarea primului rol profesional unde să pot pune în practică bazele acumulate și să evoluez alături de o echipă experimentată.
+            Junior Software Developer în formare, cu un interes deosebit pentru backend și baze de date. 
+            Dețin cunoștințe teoretice și practice în Java, Python și JS, aplicate în proiecte de tip personal/cursuri. 
+            Sunt în căutarea primului rol profesional unde să pot pune în practică bazele acumulate și să evoluez alături de o echipă experimentată.
           </p>
         </div>
       </header>
@@ -54,7 +54,7 @@ function App() {
 
       {/* Footer */}
       <footer className="main-footer">
-        <p>&copy; 2026 Daiana Domșa. All rights reserved.</p>
+        <p>&copy; 2026 Daiana Domșa</p>
       </footer>
     </div>
   );
