@@ -21,7 +21,6 @@ function App() {
           <h1>Domșa Daiana</h1>
           <h3> Proiecte dezvoltate cu pasiune</h3>
           <p>Junior Software Developer în formare, cu un interes pentru backend și baze de date. <br />
-            Am cunoștințe teoretice și practice în Java, Python și JS, aplicate în proiecte. <br />
             Sunt în căutarea primului rol profesional unde să pot pune în practică bazele acumulate și să evoluez alături de o echipă experimentată.
           </p>
         </div>
