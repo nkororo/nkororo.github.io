@@ -60,6 +60,6 @@ export const projects = [
   description: "Sistem de asistență digitală pentru gestionarea lucrărilor de licență. Include funcționalități de alocare teme, monitorizare granulară a progresului și arhivare inteligentă a proiectelor finalizate.",
   tags: ["React.js", "JSON Server", "JavaScript", "CSS Modules", "REST API"],
   category: "Web Development & EdTech",
-  githubLink: "https://github.com/nkororo/my-thesis-platform",
+  githubLink: "https://github.com/nkororo/my-thesis-plaform",
   }
 ];
