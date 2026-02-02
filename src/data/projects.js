@@ -53,5 +53,13 @@ export const projects = [
     category: "Data Science & Machine Learning",
     githubLink: "https://github.com/nkororo/Phishing-Websites-Detection",
   
+  },
+  {
+  id: 7, 
+  title: "MyThesis Platform",
+  description: "Sistem de asistență digitală pentru gestionarea lucrărilor de licență. Include funcționalități de alocare teme, monitorizare granulară a progresului și arhivare inteligentă a proiectelor finalizate.",
+  tags: ["React.js", "JSON Server", "JavaScript", "CSS Modules", "REST API"],
+  category: "Web Development & EdTech",
+  githubLink: "https://github.com/nkororo/my-thesis-platform",
   }
 ];
