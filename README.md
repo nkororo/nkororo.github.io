@@ -1,16 +1,38 @@
-# React + Vite
+# Employee Onboarding System
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a full-stack web application developed to automate the employee onboarding lifecycle. It replaces manual, chaotic processes with a structured workflow that synchronizes HR, IT, and Management departments.
 
-Currently, two official plugins are available:
+The application manages the entire journey of a new hire, ensuring that specific stages—such as manager reviews, finance approvals for hardware, and IT provisioning—are tracked and completed efficiently. The system also includes a rejection loop, allowing requests to be sent back to HR for rework.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Technology Stack
 
-## React Compiler
+- Backend: Java (Custom HTTP server with API handlers).
+- Frontend: Next.js (React).
+- Database: PostgreSQL.
+- Security: BCrypt for password hashing.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Operational Workflow
 
-## Expanding the ESLint configuration
+The system strictly enforces the onboarding lifecycle as defined in the technical specifications: 
+- Initiation: HR submission of employee profiles, including role specifications and hardware requirements.
+- Manager Review: Verification and approval of the generated Job Description.
+- Conditional Finance Approval: Automated routing to Finance for "Premium" hardware tiers, while "Standard" requests bypass this stage.
+- IT Provisioning: Account creation and hardware configuration.
+- Completion: Final validation of all departmental tasks.
+- Rejection Loop: A robust feedback mechanism allowing for request rejection and "Needs Rework" status, enabling HR to edit and resubmit profiles.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Dashboard Overview 
+
+![HR Dashboard](dashboard.png)
+
+## Getting Started
+
+To initialize the development environment, execute the following steps:
+
+1. Backend Services: Compile and execute App.java to initialize the API server.
+
+2. Frontend Application: Navigate to the project root in your terminal and execute:
+```bash
+npm run dev
+```
+3. Access: The application will be available at http://localhost:3000.
