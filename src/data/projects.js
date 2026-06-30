@@ -67,7 +67,7 @@ export const projects = [
   title: "MyThesis Platform",
   description: "Sistem de asistență digitală pentru gestionarea lucrărilor de licență. Include funcționalități de alocare teme, monitorizare granulară a progresului și arhivare inteligentă a proiectelor finalizate.",
   tags: ["React.js", "JSON Server", "JavaScript", "CSS Modules", "REST API"],
-  category: "Web Development & EdTech",
+  category: "Web Development",
   githubLink: "https://github.com/nkororo/my-thesis-plaform",
   }
 ];
