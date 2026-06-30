@@ -32,7 +32,7 @@ export const projects = [
     title: "Employee Onboarding System",
     description: "Platformă full-stack pentru automatizarea fluxului de integrare a noilor angajați. Include gestionarea condiționată a aprobărilor între departamente (HR, IT, Management), monitorizarea etapelor de provisioning hardware și un mecanism de feedback pentru editarea tichetelor.",
     tags: ["Next.js", "Java", "PostgreSQL", "REST API", "Full-Stack"],
-    category: "Web Development & Enterprise Tools",
+    category: "Web Development",
     githubLink: "https://github.com/nkororo/OnboardingSystem",
   },
   {
